@@ -1030,6 +1030,12 @@ a:focus {
     font-size: 22px;
 }
 
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 .carousel__item {
   display: none;
   width: 100%;
@@ -1057,7 +1063,20 @@ a:focus {
 
 /* Adjust styles for smaller screens */
 @media screen and (max-width: 768px) {
+  .carousel__item {
+    max-width: 80%; /* Decrease max-width of images on smaller screens */
+    margin: 0 auto; /* Center the images horizontally */
+  }
+
   .carousel__prev, .carousel__next {
     font-size: 14px; /* Decrease font size for navigation buttons on smaller screens */
   }
 }
+
+/* Additional styles for even smaller screens (e.g., mobile) */
+@media screen and (max-width: 480px) {
+  .carousel__item {
+    max-width: 90%; /* Further decrease max-width of images on smaller screens */
+  }
+}
+

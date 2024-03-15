@@ -164,8 +164,10 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/goldImages/longgoldbiscuit-min.jpg" alt="" style="
-                  height: 500px;">
+            <img src="images/slider/goldbarCoins-removebg.png" alt="" style="
+                height: 400px;
+                width: 100%;
+            ">
           </div>
         </div>
         <div class="col-md-6">
@@ -431,6 +433,7 @@
 
       const carouselItems = document.querySelectorAll('.carousel__item');
       let currentItemIndex = 0;
+      let timer;
 
       function showItem(index) {
         carouselItems.forEach(item => {
@@ -455,11 +458,32 @@
         showItem(currentItemIndex);
       }
 
-      document.querySelector('.carousel__next').addEventListener('click', nextItem);
-      document.querySelector('.carousel__prev').addEventListener('click', prevItem);
+      function startAutoScroll() {
+        timer = setInterval(nextItem, 3000); // Change image every 3 seconds (adjust as needed)
+      }
+
+      function stopAutoScroll() {
+        clearInterval(timer);
+      }
+
+      document.querySelector('.carousel__next').addEventListener('click', function() {
+        stopAutoScroll();
+        nextItem();
+        startAutoScroll();
+      });
+
+      document.querySelector('.carousel__prev').addEventListener('click', function() {
+        stopAutoScroll();
+        prevItem();
+        startAutoScroll();
+      });
 
       // Show the first item initially
       showItem(0);
+
+      // Start auto-scrolling
+      startAutoScroll();
+
 
     });
   </script>
