@@ -1030,18 +1030,19 @@ a:focus {
     font-size: 22px;
 }
 
-.carousel {
+.carousel1 {
   position: relative;
   max-width: 100%;
+  max-height: 300px; /* Set maximum height for the carousel */
   overflow: hidden;
 }
 
 .carousel__item {
   display: none;
-  width: 100%;
-  height: auto; /* Allow images to adjust their height proportionally */
+  width: auto; /* Adjust width automatically */
+  max-height: 100%; /* Set maximum height for the images */
+  margin: 0 auto; /* Center the images horizontally */
 }
-
 .carousel__prev, .carousel__next {
   position: absolute;
   top: 50%;
@@ -1055,17 +1056,17 @@ a:focus {
 
 .carousel__prev {
   left: 0;
+  display: none;
 }
 
 .carousel__next {
   right: 0;
+  display: none;
 }
-
 /* Adjust styles for smaller screens */
 @media screen and (max-width: 768px) {
   .carousel__item {
-    max-width: 80%; /* Decrease max-width of images on smaller screens */
-    margin: 0 auto; /* Center the images horizontally */
+    max-width: 100%; /* Decrease max-width of images on smaller screens */
   }
 
   .carousel__prev, .carousel__next {
@@ -1076,7 +1077,7 @@ a:focus {
 /* Additional styles for even smaller screens (e.g., mobile) */
 @media screen and (max-width: 480px) {
   .carousel__item {
-    max-width: 90%; /* Further decrease max-width of images on smaller screens */
+    max-width: 100%; /* Further decrease max-width of images on smaller screens */
   }
 }
 
