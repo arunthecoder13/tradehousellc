@@ -115,6 +115,7 @@ a:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  filter: brightness(0.5);
 }
 
 .sub_page .hero_area {
@@ -1028,4 +1029,36 @@ a:focus {
     transform: translate(-50%, -50%);
     color: #ffffff;
     font-size: 22px;
+}
+
+.carousel1 {
+  position: relative;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel__item {
+  display: none;
+  width: 100%;
+}
+
+.carousel__prev, .carousel__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.carousel__prev {
+  left: 0;
+}
+
+.carousel__next {
+  right: 0;
 }
