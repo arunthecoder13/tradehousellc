@@ -240,7 +240,7 @@
         <!--Carousel Gallery-->
           <div class="container h-100">
             <div class="row mx-auto h-100">
-              <div id="gallery" class="carousel slide w-100 align-self-center" data-ride="carousel">
+              <div id="gallery" class="carousel w-100 align-self-center" data-ride="carousel">
                 <div class="carousel-inner mx-auto w-90" role="listbox" data-toggle="modal" data-target="#lightbox">
                   <div class="carousel-item">
                     <div class="col-lg-5 col-md-4">
@@ -466,10 +466,10 @@
       });
       
       jQuery('#gallery').carousel({
-        interval: 5000
+        interval: 3000
       })
 
-      // Modify each slide to contain five columns of images
+      // Modify each slide to contain threee columns of images
       jQuery('#gallery.carousel .carousel-item').each(function(){
           var minPerSlide = 3;
           var next = jQuery(this).next();
@@ -485,7 +485,7 @@
               }
               
               next.children(':first-child').clone().appendTo(jQuery(this));
-            }
+          }
       });
 
       // Initialize carousel
