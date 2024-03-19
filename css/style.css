@@ -2,7 +2,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #322B1A;
   overflow-x: hidden;
 }
 
@@ -53,6 +54,7 @@ h2 {
   margin-bottom: 0;
   font-size: 2.5rem;
   font-weight: bold;
+  color:white
 }
 
 .heading_container h2 span {
@@ -168,7 +170,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 5px 20px;
+  padding: 5px 15px;
   color: #ffffff;
   text-align: center;
   text-transform: uppercase;
@@ -352,6 +354,18 @@ a:focus {
 
 .slider_section .detail-box p {
   font-size: 14px;
+}
+
+a {
+  color: #ffffff;
+}
+a:hover{
+  color: #ffbe33;
+  text-decoration: underline;
+}
+a:visited{
+  color: #ffbe33;
+  text-decoration: underline;
 }
 
 .slider_section .detail-box a {
@@ -1212,3 +1226,11 @@ a:focus {
 }
 
 /*# Carousel Gallery*/
+
+.policysection{
+  margin-top: 70px
+}
+
+.policypara{
+  color: white;
+}
