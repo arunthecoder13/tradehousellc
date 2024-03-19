@@ -356,14 +356,14 @@ a:focus {
   font-size: 14px;
 }
 
-a {
+p > a {
   color: #ffffff;
 }
-a:hover{
+p > a:hover{
   color: #ffbe33;
   text-decoration: underline;
 }
-a:visited{
+p > a:visited{
   color: #ffbe33;
   text-decoration: underline;
 }
