@@ -357,7 +357,7 @@ a:focus {
 }
 
 p > a {
-  color: #ffffff;
+  color: #ffbe33;
 }
 p > a:hover{
   color: #ffbe33;
@@ -635,7 +635,6 @@ p > a:visited{
 
 /* #1C1B19 */
 .about_section {
-  background: #1C1B19; 
   color: #ffffff;
 }
 
@@ -1249,6 +1248,10 @@ section#section4 {
 .backgroundImage{
   background-image: url("../images/goldybackground.jpg");
   padding: 0px 0px 80px 0px;
+}
+
+.aboutusimage{
+  background-image: url("../images/sparkle-lights-glitter-golden-color-background.jpg");
 }
 
 .carousel-inner.mx-auto.w-90{
