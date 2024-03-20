@@ -1238,7 +1238,7 @@ p > a:visited{
 }
 
 section#section4 {
-  background-image: url("/images/grayishBackground.jpg");
+  background-image: url("../images/grayishBackground.jpg");
 }
 
 .productoffer_section {
@@ -1247,7 +1247,7 @@ section#section4 {
 }
 
 .backgroundImage{
-  background-image: url("/images/goldybackground.jpg");
+  background-image: url("../images/goldybackground.jpg");
   padding: 0px 0px 80px 0px;
 }
 
