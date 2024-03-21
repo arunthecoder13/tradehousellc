@@ -1289,6 +1289,11 @@ p {
   line-height: 1.65;
 }
 
+span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 17px;
+}
+
 a.btn1,button {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
