@@ -501,6 +501,10 @@
           {
             return
           }
+          if ($('.navbar-collapse').hasClass('show')) {
+            $('.navbar-collapse').collapse('hide');
+            $('.navbar-toggler').addClass('collapsed'); // Add collapsed class to the toggler
+          }
           $('html, body').animate({
             scrollTop: $(hash).offset().top
           }, 800, function () {
