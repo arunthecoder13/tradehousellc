@@ -154,7 +154,7 @@ a:focus {
   width: 100%;
   background-color: #0C0709;
   z-index: 1000;
-  padding: 10px 20px; /* Default padding for mobile devices */
+  padding: 10px 15px; /* Default padding for mobile devices */
   position: sticky;
   top: 0;
 }
