@@ -164,8 +164,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="detail-box">
-              <div class="heading_container">
+            <div class="detail-box animation-element">
+              <div class="heading_container ">
                 <h2>
                   We Are Tradehouse Gold
                 </h2>
@@ -197,13 +197,13 @@
     <section class="offer_section" id="ourproducts">
       <div class="offer_container">
         <div class="container ">
-          <div class="heading_container" >
+          <div class="heading_container animation-element" >
             <h2>
               Our Products
             </h2>
           </div>
           <div class="row">
-            <div class="col-md-6 animation-element">
+            <div class="col-md-6 animation-elementx left-image">
                 <div class="box">
                     <div class="img-box">
                         <img src="images/Products/bullionbar.jpeg" alt="Bullion Bars" style="height: 170px;">
@@ -214,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 animation-element">
+            <div class="col-md-6 animation-elementx right-image">
                 <div class="box">
                     <div class="img-box">
                         <img src="images/Products/barandcoins.jpeg" alt="Gold Coins" style="height: 170px;">
@@ -228,7 +228,7 @@
           </div>
         </div>
       </div>
-      <div class="offer_container" style="margin-top: 45px;">
+      <div class="offer_container animation-element" style="margin-top: 45px;">
           <!--Carousel Gallery-->
             <div class="container h-100">
               <div class="row mx-auto h-100">
@@ -280,7 +280,7 @@
   <!-- book section -->
   <section class="offer_section policysection" id="ourkyc">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container animation-element">
         <h2>
           Our KYC Procedure
         </h2>
@@ -288,7 +288,7 @@
       <br>
       <div class="row">
         <div class="col-md-12">
-          <div class="form_container policypara">
+          <div class="form_container policypara animation-element">
               <h5 class="mt-1"><b>Tradehouse Gold Commitment to Responsible Practices</b></h5>
               <p class="mt-1">At Tradehouse Gold, we are dedicated to upholding the highest business and ethical standards in all our operations. We understand the importance of responsible gold production and are committed to conducting our work with integrity and diligence.</p>
               <br>
@@ -321,13 +321,13 @@
   <!-- book section -->
   <section class="book_section layout_padding2" id="contactus">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container animation-element">
         <h2>
           Contact Us Today
         </h2>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 animation-elementx left-image">
           <div class="form_container">
             <form action="">
               <div>
@@ -348,7 +348,7 @@
             </form>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 animation-elementx right-image">
           <div class="map_container">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1803.9977785058425!2d55.2974703!3d25.2707349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43440a4b7815%3A0x478a9ce2cc5f0d7d!2sThe%20Gold%20Center!5e0!3m2!1sen!2sin!4v1710262627059!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
@@ -358,7 +358,7 @@
   </section>
   <!-- end book section -->
   <!-- footer section -->
-  <footer class="footer_section">
+  <footer class="footer_section animation-element">
     <div class="container">
       <div class="row">
         <div class="col-md-4 footer-col">
@@ -553,6 +553,20 @@
         }
       });
     });
+
+    $(window).scroll(function() {
+        // Check if element is visible
+        $('.animation-elementx').each(function() {
+            var position = $(this).offset().top;
+            var windowHeight = $(window).height();
+            var scrollPosition = $(window).scrollTop();
+
+            if (position < scrollPosition + windowHeight - 50) { // Adjust offset as needed
+                $(this).addClass('visible');
+            }
+        });
+    });
+
   </script>
 
   <div class="circle-container" id="backToTopBtn">

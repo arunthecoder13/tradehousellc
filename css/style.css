@@ -1316,3 +1316,21 @@ a.btn1,button {
   opacity: 1;
   transform: translateY(0);
 }
+
+.animation-elementx {
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.left-image {
+    transform: translateX(-50px); /* Start off the screen to the left */
+}
+
+.right-image {
+    transform: translateX(50px); /* Start off the screen to the right */
+}
+
+.animation-elementx.visible {
+    opacity: 1;
+    transform: translateX(0); /* Move to the center when visible */
+}
