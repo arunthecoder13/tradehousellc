@@ -35,7 +35,7 @@
   <header class="header_section" id="home">
     <nav class="navbar navbar-expand-lg custom_nav-container ">
       <a href="index.html">
-        <img src="images/Logo-Small.png" alt="Tradehouse Gold" style="
+        <img src="images/logoone.png" alt="Tradehouse Gold" style="
             height: 70px;
             width: 260px;
         ">
@@ -203,7 +203,7 @@
             </h2>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 animation-element">
                 <div class="box">
                     <div class="img-box">
                         <img src="images/Products/bullionbar.jpeg" alt="Bullion Bars" style="height: 170px;">
@@ -214,7 +214,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 animation-element">
                 <div class="box">
                     <div class="img-box">
                         <img src="images/Products/barandcoins.jpeg" alt="Gold Coins" style="height: 170px;">
@@ -539,6 +539,19 @@
       // Initialize carousel
       jQuery( ".carousel-item:first-of-type" ).addClass( "active" );
       jQuery( ".carousel-indicators:first-child" ).addClass( "active" );
+    });
+
+    $(window).scroll(function() {
+      // Check if element is visible
+      $('.animation-element').each(function() {
+        var position = $(this).offset().top;
+        var windowHeight = $(window).height();
+        var scrollPosition = $(window).scrollTop();
+
+        if (position < scrollPosition + windowHeight - 50) { // Adjust offset as needed
+          $(this).addClass('visible');
+        }
+      });
     });
   </script>
 
